@@ -27,7 +27,7 @@ jobs:
       testResultsFiles: '**/*.trx' 
   - task: PublishBuildArtifacts@1
     inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)\IIS-Sourcecode'
+      PathtoPublish: '$(Build.SourcesDirectory)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
 
@@ -53,6 +53,6 @@ jobs:
       testResultsFiles: '**/*.trx' 
   - task: PublishBuildArtifacts@1
     inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)\IIS-Sourcecode'
+      PathtoPublish: '$(Build.SourcesDirectory)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
